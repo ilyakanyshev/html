@@ -19,7 +19,7 @@
    
    <div id="post">
      <h1>Support</h1>
-     <p>Здравствуйте, Вы находитесь на странице техподдержки <a href="index.php">CodeGround</a>. Задайте вопрос администратору с помощью Вашей почты. Писать <a href="mailto://admin@codeground.ru">на эту почту</a>.</p>
+     <p>Здравствуйте, Вы находитесь на странице техподдержки <a href="index.php">CodeGround</a>. Задайте вопрос администратору с помощью Вашей почты. Писать <a href="mailto://support@codeground.ru">на эту почту</a>.</p>
    </div>
 
   </div>

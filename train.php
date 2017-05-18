@@ -43,7 +43,7 @@
 			      &nbsp;
 			    </td>       
 			  </tr>
-			  <?php /* if ($type < 3) {
+			  <?php  if ($type < 3) {
 			  	?> 
 			  	<tr>
 				    <td colspan="5">
@@ -52,8 +52,7 @@
 				    	</a>
 				   </td>
 			  	</tr>
-			  	<?php}
-			  	*/ 
+			  	<?php }
 			  	include("tasks");
 			  	$length = count($task);
 			  	for ($i = $length; $i >= max($length - $length % 50,1); $i--) {
