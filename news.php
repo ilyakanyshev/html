@@ -87,7 +87,7 @@ $_REQUEST=defender_xss($_REQUEST);
     }else{
         ?> <div id="general_content">
     <div id="post">
-        Sorry, ID not found. Please, write <a href="mailto://ilya.kanyshev@mail.ru">administration</a>.
+        Sorry, ID not found. Please, write <a href="mailto://support@codeground.ru">administration</a>.
     </div><?php
     } }
     else {
@@ -114,10 +114,12 @@ $_REQUEST=defender_xss($_REQUEST);
 } ?>
 <?php } ?> 
   </div>
+  <div id="general_content">
   <?php 
   $id = 3;
   include("text_news");
   ?>
+  </div>
 </div>
     <?php } 
 ?> 
