@@ -75,7 +75,7 @@
 			  				<?php echo("<a href=\"problem.php?number=".$i."\">Решить</a>");?>
 			  			</td>
 			  		</tr>
-			  		<?
+			  		<?php
 			  	}
 			  	?>
 			</tbody>
