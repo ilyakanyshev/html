@@ -1,0 +1,17 @@
+
+<footer>
+    <div id="left_footer">
+        <div id="one_footer"><a href="bugtracker.php" class="footer">Bug-tracker</a></div>
+        <div id="one_footer"><a href="support.php" class="footer">Помощь</a></div>
+    </div>
+    <div id="center_footer">
+        <div id="one_footer"><a href="rules.php" class="footer">Rules</a></div>
+        <div id="one_footer"><a href="about.php" class="footer">About project</a></div>
+        <div id="one_footer"><a href="contact.php" class="footer">Contact</a></div>
+    </div>
+    <div id="right_footer">
+    </div>
+</footer>
+<div id="footer">
+    &copy; <a class="footer" href="about.php">Project</a> | All rights reserved
+</div>

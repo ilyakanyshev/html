@@ -1,0 +1,11 @@
+<?php 
+$array = array(
+    array(
+        "title" => "Local testing contest",
+        "author" => "ilyakanyshev",
+        "start" => "24.05.17 18:00",
+        "durability" => "2:00",
+        "regpeople" => "1",
+        "id" => "1",
+    ),
+);?>

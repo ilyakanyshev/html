@@ -1,0 +1,86 @@
+<?php
+    include('textnews');
+    
+    $count  = count($array);
+
+    
+if ($id == 3) {
+    if (isset($_GET['page'])){
+        $page = $_GET['page'];
+        if ((5 * ($page - 1) < $count) and ($page > 0)) {
+        for ($i = min(5*($page - 1),$count); $i < min((5*$page),$count); $i++){ ?>
+            <div id="post">
+                <h1>
+                    <?php 
+                        echo ($array[$count - $i - 1]['title']);
+                    ?>
+                </h1>
+                <div id="st_news">
+                    <?php 
+                        echo ($array[$count - $i - 1]['text']);
+                    ?>
+                </div>
+                <div id="author">
+                    <?php 
+                        echo ($array[$count - $i - 1]['author']);
+                    ?>
+                </div>
+            </div>
+<?php }
+    } else {echo("<div id=\"post\">Sorry, page not found. Please, write <a href=\"mailto:ilya.kanyshev@mail.ru\">administration</a>.</div>");} }
+    else {
+    for ($i = $count; $i > max(0,$count - 5) ; $i = $i - 1) {?>
+    <div id="post">
+        <h1>
+            <?php 
+            echo ($array[$i-1]['title']);?>
+        </h1>
+        <div id="st_news">
+            <?php 
+            echo ($array[$i-1]['text']);?>
+
+        <?php echo("
+<br><a href=\"news.php?id=".$i."\">Смотреть подробнее</a>");?>
+        </div>
+        <div id="author">
+            <?php 
+            echo ($array[$i-1]['author']);?>
+        </div>
+    </div>
+    <?php } }
+        ?>
+<div id="location_block">
+        <?php
+        $c = $count / 5 + 1;
+        for ($i = 1; ($i < $c); $i++) {
+            echo("<a href=\"news.php?page=".$i."\"><div id=\"pageNews\">".$i."</div></a>");
+        }
+            
+        ?>
+</div>
+        <?php
+}
+if ($id == 2) {
+?>
+      <?php 
+    for ($i = $count; $i > max(0,$count - 3) ; $i = $i - 1) 
+      {?> 
+      <div id="one_new">
+        <header>
+            <?php 
+                echo ($array[$i-1]['title']);
+            ?>
+        </header>
+            <?php 
+                echo ($array[$i-1]['smartText']);
+            ?>
+        <a href="news.php">
+          <div id="href_news">
+            Подробнее...
+          </div>
+        </a>
+      </div>
+      <?php } ?>
+<?php
+}
+    ?>
