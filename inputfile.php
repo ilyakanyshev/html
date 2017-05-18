@@ -27,19 +27,22 @@ if ((isset($_FILES))and(isset($_POST['language']))) {
 	$k++;
 	settype($k,'string');
 	mkdir("user_files/".$k."/");
+
+	//$output = shell_exec('python3 /var/www/TESTSYS/scripts/testing.py '.$k);
+
 	$dirr = "user_files/".$k."/";
 	print_r($dir);
 	if ($typeFile === 'FPC') {
 		file_put_contents($dirr. "main.pas",$textCode);
 		file_put_contents($dirr. "text.txt",$textCode);
 		file_put_contents($dirr. "info",'pas \n '+$_POST['id']);
-		file_put_contents($dirr. "result.txt",'Тестируется');
+		file_put_contents($dirr. "result.txt",$result);
 		settype($k,'int');
 	} else if ($typeFile === 'C++ 11') {
 		file_put_contents($dirr."main.cpp",$textCode);
 		file_put_contents($dirr."text.txt",$textCode);
 		file_put_contents($dirr."info",'cpp\n'+$_POST['id']);
-		file_put_contents($dirr."result.txt",'Тестируется');
+		file_put_contents($dirr."result.txt",$result;);
 		settype($k,'int');
 	}
 	$textFile = file_get_contents("srcStatPos");
