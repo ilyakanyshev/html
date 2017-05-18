@@ -107,7 +107,6 @@ $_REQUEST=defender_xss($_REQUEST);
         <textarea name="fastComment" cols="40" rows="3" id="addnews"></textarea>
         <button id="addnews">Отправить</button>
     </form>
-</div>
 <div id="block_post">
 <?php if (($type < 4) and (isset($_GET['page']) === false) and (isset($_GET['id']) === false)) {
     ?> <a onclick="addnews()"><div id="post"><h1 style="border: 0px;padding: 0px; margin: 0px;">Отправить запись</h1></div></a> <?php
@@ -119,7 +118,6 @@ $_REQUEST=defender_xss($_REQUEST);
   $id = 3;
   include("text_news");
   ?>
-  </div>
 </div>
     <?php } 
 ?> 
